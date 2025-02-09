@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://github.com/Bibek773/Bibek-Ghimire/blob/main/logo.jpg" alt="Bibek Ghimire Logo" width="200" />
-</p>
 
 <h1 align="center">Hi 👋, I'm Bibek Ghimire</h1>
 <h3 align="center">A passionate learner and aspiring software developer</h3>
