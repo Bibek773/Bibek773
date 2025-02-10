@@ -45,9 +45,9 @@
   <img src="https://github-readme-stats.vercel.app/api?username=bibek773&show_icons=true&theme=dark" alt="GitHub Stats" />
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=bibek773&theme=dark" alt="GitHub Streak" />
-</p>
+</p> -->
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=bibek773&show_icons=true&layout=compact&theme=dark" alt="Top Languages" />
