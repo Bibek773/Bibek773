@@ -55,9 +55,6 @@
   <img src="https://github-readme-stats.vercel.app/api?username=bibek773&show_icons=true&theme=radical" alt="GitHub Stats" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bibek773&theme=radical" alt="GitHub Streak" />
-</p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=bibek773&layout=compact&theme=radical" alt="Top Languages" />
@@ -67,38 +64,17 @@
 
 ### 📚 Currently Learning
 
-- ☕ Core & Advanced Java (OOP, JDBC, Swing, Servlets)
-- 🔄 Data Structures & Algorithms (Leetcode/GeeksForGeeks)
+- ☕ Core & Advanced Java 
+- 🔄 Data Structures & Algorithms 
 - 🧠 Basics of Machine Learning
 - 🗃️ SQL & Database Management Systems
 - 💻 Version Control with Git & GitHub
 
 ---
 
-### 🏆 Achievements
 
-- ✅ Built multiple Java-based mini projects
-- 🌟 Consistent GitHub contributor
-- 🎯 Completed 100+ coding problems on various platforms
-- 📢 Actively sharing my journey on [LinkedIn](https://linkedin.com/in/bibek-ghimire-1952292b1)
 
----
 
-### 🧩 Fun Fact
-
-> I enjoy debugging more than coding — because solving bugs feels like solving puzzles 🧩
-
----
-
-### 📁 Featured Projects
-
-Here are some of my favorite or active projects:
-
-- 🔗 [Java Chat Application](https://github.com/Bibek773) – Real-time chat using Core Java Sockets
-- 🔗 [Portfolio Website](https://github.com/Bibek773) – Personal site using HTML, CSS, JS
-- 🔗 [DSA Practice Problems](https://github.com/Bibek773) – Solving problems and documenting with explanations
-
----
 
 <p align="center">
   🚀 *Always learning, always growing!* 🌱
