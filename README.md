@@ -3,7 +3,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=200&section=header&text=Hello%20World!%20I'm%20Bibek%20Ghimire%20👨‍💻&fontSize=40&fontAlignY=35&desc=A+Java+Dev+%7C+DSA+Lover+%7C+Future+ML+Engineer&descAlignY=60&descAlign=50" />
 </p>
 
-<!-- PROFILE VIEWS AND BADGES -->
+<!-- PROFILE STATS & BADGES -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=bibek773&label=Profile+Views&color=brightgreen&style=flat-square" alt="Profile Views" />
   <img src="https://img.shields.io/badge/Focus-Java-blue?style=flat-square&logo=java" />
@@ -15,6 +15,11 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=4000&pause=1000&center=true&vCenter=true&width=1000&lines=👋+Hey,+I'm+Bibek+Ghimire!;🚀+Aspiring+Java+Developer;🎯+Focused+on+DSA,+Web+Dev,+and+ML;📚+Always+Learning,+Always+Building" />
 </p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="500px" alt="Coding Fire" />
+</p>
+
 
 ---
 
@@ -61,31 +66,13 @@
 
 ---
 
-## 📈 GitHub Stats (⚡ Live + Animated)
+## 📈 GitHub Stats 
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bibek773&theme=radical&border=none" height="200" />
-</p>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=bibek773&show_icons=true&theme=tokyonight&rank_icon=github" height="180" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bibek773&layout=compact&theme=tokyonight" height="180" />
 </p>
 
----
-
-## 🐍 Contribution Snake Animation
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="snake gif" />
-</p>
-
----
-
-## 🎵 Vibes While Coding
-
-<p align="center">
-  <img src="https://spotify-github-profile.vercel.app/api/view?uid=31vbhci6knsjmg5jkz4udm27xchu&cover_image=true&theme=novatorem&bar_color=1DB954&bar_color_cover=false" />
-</p>
 
 ---
 
@@ -95,27 +82,6 @@
   <img src="https://github-profile-trophy.vercel.app/?username=bibek773&theme=radical&row=1&margin-w=10&no-frame=true" />
 </p>
 
----
-
-## 🎯 2025 Goals
-
-```yaml
-☑️ 500+ LeetCode problems solved
-☑️ Publish ML mini-projects
-☑️ Build production-level web apps
-☑️ Collaborate in hackathons
-☑️ Learn Spring Boot or Django
-```
-
----
-
-## 🧠 Quote to Live By
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=0FFFD9&center=true&vCenter=true&width=800&lines=Don't+watch+the+clock%2C+do+what+it+does%3A+Keep+Going+🚀;" />
-</p>
-
----
 
 <!-- FOOTER -->
 <p align="center">
