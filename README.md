@@ -1,6 +1,6 @@
 <!-- WELCOME BANNER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=200&section=header&text=Hello%20World!%20I'm%20Bibek%20Ghimire%20👨‍💻&fontSize=40&fontAlignY=35&desc=A+Java+Dev+%7C+DSA+Lover+%7C+Future+ML+Engineer&descAlignY=60&descAlign=50" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=200&section=header&text=Hello%20World!%20I'm%20Bibek%20Ghimire%20👨‍💻&fontSize=40&fontAlignY=35&desc=A+Java+Dev+%7C+DSA+Lover+%7C+Future+Engineer&descAlignY=60&descAlign=50" />
 </p>
 
 <!-- PROFILE STATS & BADGES -->
