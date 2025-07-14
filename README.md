@@ -39,7 +39,7 @@
 ## 🌐 Connect with Me
 
 <p align="center">
-  <a href="https://linkedin.com/in/bibek-ghimire-1952292b1" target="_blank">
+  <a href="https://linkedin.com/in/bibekghimire773" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" />
   </a>
   &nbsp;
