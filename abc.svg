@@ -51,6 +51,8 @@
     <path id="cloud4" d="M 0,25 C 0,11 11,0 25,0 C 31,0 37,3 41,7 C 46,2 53,0 60,0 C 74,0 85,11 85,25 C 85,29 84,32 82,35 C 89,37 94,43 94,50 C 94,61 85,70 74,70 L 21,70 C 10,70 0,61 0,50 C 0,39 0,32 0,25 Z" fill="black" opacity="0.2" filter="url(#cloudFilter1)"/>
   </defs>
   
+
+  
   <!-- Animated realistic clouds moving across the background -->
   <use href="#cloud1" transform="translate(100, 40)">
     <animateTransform attributeName="transform" type="translate" values="100,40; 900,40; 100,40" dur="20s" repeatCount="indefinite"/>
@@ -85,20 +87,21 @@
   </use>
   
   <!-- Main title -->
-  <text x="400" y="80" text-anchor="middle" fill="white" font-family="'Courier New', monospace" font-size="48" font-weight="bold" filter="url(#glow)">
-    BIBEK GHIMIRE
+  <text x="400" y="80" text-anchor="middle" fill="white" font-family="'Courier New', monospace" font-size="32" font-weight="bold" filter="url(#glow)">
+    THANKS FOR VISITING!
     <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
   </text>
   
-  <!-- Subtitle -->
-  <text x="400" y="120" text-anchor="middle" fill="#00ff88" font-family="'Courier New', monospace" font-size="18" font-weight="bold">
-    JAVA DEVELOPER | DSA ENTHUSIAST
+  <!-- Star symbol with animation -->
+  <text x="400" y="120" text-anchor="middle" fill="#ffff00" font-family="'Courier New', monospace" font-size="24" font-weight="bold">
+    ⭐
     <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="scale" values="1;1.2;1" dur="2s" repeatCount="indefinite"/>
   </text>
   
-  <!-- Animated subtitle -->
-  <text x="400" y="150" text-anchor="middle" fill="#ff0080" font-family="'Courier New', monospace" font-size="14" font-weight="bold">
-    BUILDING THE FUTURE WITH CODE
+  <!-- Subtitle -->
+  <text x="400" y="150" text-anchor="middle" fill="#00ff88" font-family="'Courier New', monospace" font-size="18" font-weight="bold">
+    STAR MY REPOS IF YOU LIKE THEM!
     <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
   </text>
   
@@ -115,4 +118,18 @@
   <circle cx="750" cy="150" r="3" fill="#ff0080">
     <animate attributeName="opacity" values="0;1;0" dur="1.5s" begin="1.5s" repeatCount="indefinite"/>
   </circle>
+  
+  <!-- Additional decorative elements -->
+  <rect x="100" y="180" width="600" height="2" fill="url(#cyberpunkGrad)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Animated side elements -->
+  <polygon points="20,100 40,90 40,110" fill="#ff0080" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <polygon points="780,100 760,90 760,110" fill="#00ff88" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </polygon>
 </svg>

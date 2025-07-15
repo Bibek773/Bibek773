@@ -1,5 +1,7 @@
-# 👋 Hello, I'm Bibek Ghimire!
 
+<div align="center">
+  <img src="./animated-banner.svg" alt="Animated Banner" width="800"/>
+</div>
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=00C9FF&background=00000000&center=true&vCenter=true&width=1000&lines=Welcome+to+my+GitHub+Profile!+%F0%9F%91%8B;I'm+a+passionate+Java+Developer+%E2%98%95;Building+the+future+with+code+%F0%9F%9A%80;Let's+connect+and+collaborate!+%F0%9F%A4%9D" alt="Typing SVG" />
 </div>
@@ -8,42 +10,28 @@
   <img src="https://komarev.com/ghpvc/?username=bibek773&label=Profile+Views&color=blueviolet&style=for-the-badge" alt="Profile Views" />
   <img src="https://img.shields.io/github/followers/bibek773?label=Followers&style=for-the-badge&color=blue&logo=github" />
   <img src="https://img.shields.io/github/stars/bibek773?label=Stars&style=for-the-badge&color=yellow&logo=github" />
-  <img src="https://img.shields.io/badge/Made%20in-Nepal-red?style=for-the-badge&logo=googlemaps" />
+  <img src="https://img.shields.io/badge/From%20-Nepal-red?style=for-the-badge&logo=googlemaps" />
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-## 🎯 About Me
+# 🎯 About Me
 
 <img align="right" alt="Coding GIF" width="400" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
 
-Hi there! I'm **Bibek Ghimire**, a passionate Java developer and Computer Engineering student based in **Nepal 🇳🇵**. I'm focused on building a solid foundation in backend and full-stack development, with a deep interest in system design, database optimization, and scalable software engineering.
+Hi there! I'm **Bibek Ghimire**, a passionate Java developer and Computer Engineering student based in **Nepal 🇳🇵**. I love building robust backend systems and solving challenging problems with clean, efficient code.
 
-### 👨‍💻 What I Do
+Currently diving deep into **Spring Boot** and **system design** while sharpening my **DSA skills**. My goal is to create impactful software solutions and contribute to the tech community.
 
-- Write clean, efficient Java code for backend systems
-- Solve challenging problems using DSA
-- Build full-stack applications using Spring Boot, React, and modern tools
-- Continuously learn and apply new technologies
+When I'm not coding, you'll find me exploring new technologies, gaming, or working on personal projects that push my boundaries.
 
-### 🚀 Currently Learning
+---
 
-- **Spring Boot & Microservices**
-- **System Design Fundamentals**
-- **Machine Learning Basics**
-- **Cloud Computing (AWS)**
+**Currently Learning:** Spring Boot • System Design • Machine Learning • AWS
 
-### 🎯 2024 Goals
+**2025 Goals:** Build amazing projects • Master Spring ecosystem • Land a remote role
 
-- Build and deploy **10+ real-world projects**
-- **Master the Spring Boot ecosystem**
-- **Contribute to open-source projects**
-- **Secure a remote internship or full-time software role**
-
-### 🎮 Hobbies
-
-- Coding 💻 | Problem Solving 🧠 | Gaming 🎮 | Lifelong Learning 📚
-
+<br clear="right"/>
 ## 🌐 Connect with Me
 
 <div align="center">
@@ -152,10 +140,8 @@ Hi there! I'm **Bibek Ghimire**, a passionate Java developer and Computer Engine
   </a>
 </div>
 
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=200&section=footer&text=Thanks+for+visiting!+⭐+Star+my+repos+if+you+like+them!&fontSize=24&fontColor=fff&animation=fadeIn&fontAlignY=70" />
+  <img src="abc.svg" alt="Animated Banner" width="800"/>
 </div>
-
 ---
-
-⭐ From [Bibek Ghimire](https://github.com/Bibek773) with ❤️
