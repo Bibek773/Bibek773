@@ -32,6 +32,7 @@ When I'm not coding, you'll find me exploring new technologies, gaming, or worki
 **2025 Goals:** Build amazing projects • Master Spring ecosystem • Land a remote role
 
 <br clear="right"/>
+
 ## 🌐 Connect with Me
 
 <div align="center">
