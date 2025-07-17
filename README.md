@@ -106,7 +106,7 @@ When I'm not coding, you'll find me exploring new technologies, gaming, or worki
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2000&pause=1000&color=00C9FF&background=00000000&center=true&vCenter=true&width=800&lines=🔥+Advanced+Java+%26+Spring+Boot+Development;📊+Data+Structures+%26+Algorithms+Mastery;💾+Database+Design+%26+Optimization;🤝+Open+Source+Contributions;🚀+Building+Scalable+Applications" alt="Current Focus" />
 </div>
 
-### 📚 Learning Path 2024
+### 📚 Learning Path 2025
 - ✅ Core Java Concepts
 - ✅ Object-Oriented Programming
 - ✅ Basic Data Structures
