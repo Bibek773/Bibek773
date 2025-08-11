@@ -39,6 +39,12 @@ When I'm not coding, you'll find me exploring new technologies, gaming, or worki
   <a href="https://linkedin.com/in/bibekghimire773" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
+  
+  <a href="https://ghimire-bibek.com.np" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none;">
+    <img src="https://raw.githubusercontent.com/Bibek773/forwebsite/main/img/logo.png" width="30" alt="Website Logo" style="vertical-align: middle; margin-right: 8px;">
+ 
+  </a>
+
   <a href="https://github.com/Bibek773" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
   </a>
@@ -52,6 +58,7 @@ When I'm not coding, you'll find me exploring new technologies, gaming, or worki
     <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
 </div>
+
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
