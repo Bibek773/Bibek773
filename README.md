@@ -1,8 +1,8 @@
 # Bibek Ghimire
 
-**Java Developer | AI/ML Enthusiast | Computer Engineering Student | Nepal**
+** AI/ML Enthusiast | Computer Engineering Student | Nepal**
 
-Passionate software developer specializing in Java backend development with a focus on building scalable, efficient applications. Currently expanding expertise in Spring Boot, system design, and cloud technologies.
+Passionate software developer specializing in Java backend development with a strong foundation in Python, Machine Learning, and AI. Currently focused on deepening expertise in ML/AI using Python, while gradually expanding into Spring Boot, system design, and cloud technologies. 
 
 **Connect:** [LinkedIn](https://linkedin.com/in/bibekghimire773) • [Email](mailto:bibekghimire773@gmail.com) • [GitHub](https://github.com/Bibek773)
 
@@ -11,7 +11,7 @@ Passionate software developer specializing in Java backend development with a fo
 ## Technical Skills
 
 **Languages**  
-Java, C++, C, Python, JavaScript
+Java, C++, C, Python, Javascript, C#
 
 **Backend & Frameworks**  
 Spring Boot, Node.js
@@ -23,16 +23,16 @@ React, HTML/CSS, Bootstrap, Tailwind CSS
 MySQL
 
 **Tools & Platforms**  
-Git, Docker, AWS, Linux, IntelliJ IDEA, VS Code, GitHub
+Git, Linux, IntelliJ IDEA, VS Code, GitHub
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Current Focus
 
-- Building production-ready applications with Spring Boot
-- Mastering data structures and algorithms
+- Building Stock Market Analysis System
 - Researching on Machine Learning and AI
 - Contributing to open-source projects
+- Exploring ML and DL in depth 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
