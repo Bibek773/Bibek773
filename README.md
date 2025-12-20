@@ -1,6 +1,6 @@
 # Bibek Ghimire
 
-** AI/ML Enthusiast | Computer Engineering Student | Nepal**
+**AI/ML Enthusiast | Computer Engineering Student | Nepal**
 
 Passionate software developer specializing in Java backend development with a strong foundation in Python, Machine Learning, and AI. Currently focused on deepening expertise in ML/AI using Python, while gradually expanding into Spring Boot, system design, and cloud technologies. 
 
