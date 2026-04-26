@@ -1,44 +1,111 @@
+<div align="center">
+
 # Bibek Ghimire
+### Computer Engineering Student · Java Backend Developer in Progress
 
-** Computer Engineering Student | Nepal**
+🇳🇵 Nepal &nbsp;|&nbsp; 📚 B.E. Computer Engineering &nbsp;|&nbsp; 🎯 Backend & QA Focused
 
-Passionate software developer specializing in Java backend development with a strong foundation in Python, Machine Learning, and AI. Currently focused on deepening expertise in ML/AI using Python, while gradually expanding into Spring Boot, system design, and cloud technologies. 
+</div>
 
-**Connect:** [LinkedIn](https://linkedin.com/in/bibekghimire773) • [Email](mailto:bibekghimire773@gmail.com) • [GitHub](https://github.com/Bibek773) • [Website](https://ghimire-bibek.com.np)
+---
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+## About Me
 
-## Technical Skills
+I'm a Computer Engineering student from Nepal with a focused interest in **Java backend development**. My current learning path centers around building practical, well-structured REST APIs using the **Spring Framework** and **Spring Boot** — and steadily improving my understanding of how real-world backend systems are designed.
 
-**Languages**  
-Java, C++, C, Python, Javascript, C#
+I believe in learning by building. Rather than collecting certifications, I focus on writing real code, breaking things, and understanding why they broke.
 
-**Backend & Frameworks**  
-Spring Boot, Node.js
+My near-term goal is to grow into a capable backend developer and land an internship in a **backend or QA engineering role** where I can contribute meaningfully while continuing to learn.
 
-**Frontend**  
-React, HTML/CSS, Bootstrap, Tailwind CSS
+---
 
-**Databases**  
-MySQL
+## 🛠 Technical Skills
 
-**Tools & Platforms**  
-Git, Linux, IntelliJ IDEA, VS Code, GitHub
+**Languages**
+- Java (primary focus), Python (academic — ML/AI coursework), C/C++ (academic), HTML/CSS (basic)
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+**Backend**
+- Spring Framework, Spring Boot
+- REST API design and development
+- Basic understanding of system design concepts
+- Manual testing; learning test automation fundamentals
 
-## Current Focus
+**Database**
+- MySQL (basic to intermediate — queries, relationships, schema design)
 
-- Building Stock Market Analysis System
-- Researching on Machine Learning and AI
-- Contributing to open-source projects
-- Exploring ML and DL in depth 
+**Tools & Environment**
+- Git & GitHub
+- IntelliJ IDEA, VS Code
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+---
 
+## 📌 Current Learning Focus
 
-## Open to Opportunities
+```
+✔ Spring Boot application structure and configuration
+✔ Building and testing REST APIs
+✔ Working with Spring Data JPA and MySQL
+✔ Input validation and error handling in APIs
+→ Exploring basic system design patterns
+→ Software quality assurance and test automation
+```
 
-Actively seeking remote internships and full-time opportunities in backend development. Open to collaborating on interesting projects.
+I'm currently in an active learning phase — reading documentation, building small projects, and iterating on what I build.
 
-**Contact:** bibekghimire773@gmail.com
+---
+
+## Currently working on 
+
+### Student Management System API
+> *Spring Boot · Spring Data JPA · MySQL · REST API*
+
+A RESTful backend API for managing student records — built as a hands-on learning project to apply Spring Boot fundamentals in a realistic context.
+
+**What it covers:**
+- Full CRUD operations for student entities
+- Input validation using Bean Validation (`@Valid`, `@NotBlank`, etc.)
+- Database relationships modeled with JPA
+- Clean layered architecture: Controller → Service → Repository
+- Basic error handling and meaningful HTTP responses
+
+**Status:** Core features complete. Actively improving code quality and adding edge case handling.
+
+> 📁 *Repository link coming soon *
+
+---
+
+##  Current Goals
+- Build a small portfolio of clean, well-documented backend projects
+- Deepen my understanding of software testing — both manual and automated
+- Grow toward production-level Java/Spring development
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![Bibek's GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=default&hide_border=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=default&hide_border=true)
+
+</div>
+
+---
+
+## 📬 Contact
+
+| Platform | Link |
+|----------|------|
+| 📧 Email | `bibekghimire773@gmail.com` |
+| 💼 LinkedIn | [linkedin.com/in/your-profile](https://www.linkedin.com/in/bibekghimire773/) |
+| 🌐 Portfolio | `ghimire-bibek.com.np` |
+| 🐙 GitHub | [github.com/your-username](https://github.com/bibek773) |
+
+---
+
+<div align="center">
+
+*Open to internship opportunities in backend or QA engineering — feel free to reach out.*
+
+</div>
