@@ -93,14 +93,15 @@ A RESTful backend API for managing student records — built as a hands-on learn
 
 ---
 
-## 📬 Contact
+
+## 📫 Connect with Me
 
 | Platform | Link |
 |----------|------|
-| 📧 Email | `bibekghimire773@gmail.com` |
-| 💼 LinkedIn | [linkedin.com/in/your-profile](https://www.linkedin.com/in/bibekghimire773/) |
-| 🌐 Portfolio | `ghimire-bibek.com.np` |
-| 🐙 GitHub | [github.com/your-username](https://github.com/bibek773) |
+| 📧 Email | bibekghimire773@gmail.com |
+| 💼 LinkedIn | https://www.linkedin.com/in/bibekghimire773/ |
+| 🐙 GitHub | https://github.com/bibek773 |
+| 🌐 Portfolio | https://ghimire-bibek.com.np |
 
 ---
 
