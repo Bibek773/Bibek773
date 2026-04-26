@@ -85,9 +85,9 @@ A RESTful backend API for managing student records — built as a hands-on learn
 
 <div align="center">
 
-![Bibek's GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=default&hide_border=true&count_private=true)
+![Bibek's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Bibek773&show_icons=true&theme=default&hide_border=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=default&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Bibek773&layout=compact&theme=default&hide_border=true)
 
 </div>
 
