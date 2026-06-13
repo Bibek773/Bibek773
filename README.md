@@ -1,9 +1,18 @@
 <div align="center">
 
-# Bibek Ghimire
-### Computer Engineering Student · Java Backend Developer in Progress
+<!-- Animated name banner via SVG -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=2F80ED&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Bibek+Ghimire+%F0%9F%91%8B;Computer+Engineering+Student;Java+%2F+Spring+Boot+Learner;Backend+Developer+in+Progress" alt="Typing SVG" />
 
-🇳🇵 Nepal &nbsp;|&nbsp; 📚 B.E. Computer Engineering &nbsp;|&nbsp; 🎯 Backend & QA Focused
+<br/>
+
+🇳🇵 Kathmandu, Nepal &nbsp;·&nbsp; B.E. Computer Engineering &nbsp;·&nbsp; Open to Java & Backend Internships
+
+<br/><br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-bibekghimire773-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bibekghimire773/)
+[![GitHub](https://img.shields.io/badge/GitHub-bibek773-181717?style=flat&logo=github&logoColor=white)](https://github.com/bibek773)
+[![Portfolio](https://img.shields.io/badge/Portfolio-ghimire--bibek.com.np-2F80ED?style=flat&logo=globe&logoColor=white)](https://ghimire-bibek.com.np)
+[![Email](https://img.shields.io/badge/Email-bibekghimire773@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:bibekghimire773@gmail.com)
 
 </div>
 
@@ -11,73 +20,61 @@
 
 ## About Me
 
-I'm a Computer Engineering student from Nepal with a focused interest in **Java backend development**. My current learning path centers around building practical, well-structured REST APIs using the **Spring Framework** and **Spring Boot** — and steadily improving my understanding of how real-world backend systems are designed.
+I'm a Computer Engineering student from Nepal focused on **Java backend development** with the **Spring Framework** and **Spring Boot**.
 
-I believe in learning by building. Rather than collecting certifications, I focus on writing real code, breaking things, and understanding why they broke.
+I learn best by building projects, debugging issues, and understanding *why* things work — not just following tutorials. I'm currently looking for internships where I can contribute, grow, and develop strong engineering discipline.
 
-My near-term goal is to grow into a capable backend developer and land an internship in a **backend or QA engineering role** where I can contribute meaningfully while continuing to learn.
+Outside of code, I create realistic pencil sketches — the same patience and attention to detail carries into everything I build. ✏️
 
 ---
 
-## 🛠 Technical Skills
+## 🛠️ Tech Stack
+
+<div align="center">
 
 **Languages**
-- Java (primary focus), Python (academic — ML/AI coursework), C/C++ (academic), HTML/CSS (basic)
 
-**Backend**
-- Spring Framework, Spring Boot
-- REST API design and development
-- Basic understanding of system design concepts
-- Manual testing; learning test automation fundamentals
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML%2FCSS-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-**Database**
-- MySQL (basic to intermediate — queries, relationships, schema design)
+**Backend & Tools**
 
-**Tools & Environment**
-- Git & GitHub
-- IntelliJ IDEA, VS Code
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![IntelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
+
+</div>
 
 ---
 
-## 📌 Current Learning Focus
+## 🚧 Currently Building
 
+### Student Management System
+> `Spring Boot` · `Spring Data JPA` · `MySQL` · `HTML/CSS`
+
+A web application for managing student records — applying backend concepts end-to-end, from database to form handling.
+
+**Covers:** CRUD operations · Form handling · Layered architecture · Input validation · MySQL integration
+
+> [🔗 StudentManagementSystem](https://github.com/Bibek773/StudentManagementSystem)
+
+---
+
+## 📈 Learning Progress
+
+```text
+✅ Java backend fundamentals
+✅ Spring Boot project structure
+✅ Spring MVC and web application flow
+✅ Spring Data JPA with MySQL
+✅ CRUD operations and form handling
+✅ Input validation and error handling
+🔄 Improving code structure and maintainability
+🔄 Learning how real backend systems are organized
 ```
-✔ Spring Boot application structure and configuration
-✔ Building and testing REST APIs
-✔ Working with Spring Data JPA and MySQL
-✔ Input validation and error handling in APIs
-→ Exploring basic system design patterns
-→ Software quality assurance and test automation
-```
-
-I'm currently in an active learning phase — reading documentation, building small projects, and iterating on what I build.
-
----
-
-## Currently working on 
-
-### Student Management System API
-> *Spring Boot · Spring Data JPA · MySQL · REST API*
-
-A RESTful backend API for managing student records — built as a hands-on learning project to apply Spring Boot fundamentals in a realistic context.
-
-**What it covers:**
-- Full CRUD operations for student entities
-- Input validation using Bean Validation (`@Valid`, `@NotBlank`, etc.)
-- Database relationships modeled with JPA
-- Clean layered architecture: Controller → Service → Repository
-- Basic error handling and meaningful HTTP responses
-
-**Status:** Core features complete. Actively improving code quality and adding edge case handling.
-
-> 📁 *Repository link coming soon *
-
----
-
-##  Current Goals
-- Build a small portfolio of clean, well-documented backend projects
-- Deepen my understanding of software testing — both manual and automated
-- Grow toward production-level Java/Spring development
 
 ---
 
@@ -85,28 +82,22 @@ A RESTful backend API for managing student records — built as a hands-on learn
 
 <div align="center">
 
-![Bibek's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Bibek773&show_icons=true&theme=default&hide_border=true&count_private=true)
+<img src="https://github-readme-stats.vercel.app/api?username=Bibek773&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="160"/>
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bibek773&layout=compact&theme=tokyonight&hide_border=true" height="160"/>
 
+<br/><br/>
 
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Bibek773.Bibek773)
 
 </div>
 
 ---
 
-
-## 📫 Connect with Me
-
-| Platform | Link |
-|----------|------|
-| 📧 Email | bibekghimire773@gmail.com |
-| 💼 LinkedIn | https://www.linkedin.com/in/bibekghimire773/ |
-| 🐙 GitHub | https://github.com/bibek773 |
-| 🌐 Portfolio | https://ghimire-bibek.com.np |
-
----
-
 <div align="center">
 
-*Open to internship opportunities in backend or QA engineering — feel free to reach out.*
+💼 **Open to Java, backend, full-stack, and software internship opportunities**
+
+*Let's build something together.*
 
 </div>
