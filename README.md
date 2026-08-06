@@ -1,103 +1,114 @@
 <div align="center">
 
-<!-- Animated name banner via SVG -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=2F80ED&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Bibek+Ghimire+%F0%9F%91%8B;Computer+Engineering+Student;Java+%2F+Spring+Boot+Learner;Backend+Developer+in+Progress" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=160&section=header&text=Bibek%20Ghimire&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=42" width="100%"/>
 
-<br/>
+📍Kathmandu, Nepal, 📧bibekghimire773@gmail.com
 
-🇳🇵 Kathmandu, Nepal &nbsp;·&nbsp; B.E. Computer Engineering &nbsp;·&nbsp; Open to Java & Backend Internships
-
-<br/><br/>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-bibekghimire773-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bibekghimire773/)
-[![GitHub](https://img.shields.io/badge/GitHub-bibek773-181717?style=flat&logo=github&logoColor=white)](https://github.com/bibek773)
-[![Portfolio](https://img.shields.io/badge/Portfolio-ghimire--bibek.com.np-2F80ED?style=flat&logo=globe&logoColor=white)](https://ghimire-bibek.com.np)
-[![Email](https://img.shields.io/badge/Email-bibekghimire773@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:bibekghimire773@gmail.com)
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=7C3AED&center=true&vCenter=true&width=520&lines=Java+Developer;Spring+Framework;MERN+Stack+Developer;Open+to+Internships" alt="Typing SVG" />
 
 </div>
 
----
-
-## About Me
-
-I'm a Computer Engineering student from Nepal focused on **Java backend development** with the **Spring Framework** and **Spring Boot**.
-
-I learn best by building projects, debugging issues, and understanding *why* things work — not just following tutorials. I'm currently looking for internships where I can contribute, grow, and develop strong engineering discipline.
-
-Outside of code, I create realistic pencil sketches — the same patience and attention to detail carries into everything I build. ✏️
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 <div align="center">
 
-**Languages**
+
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML%2FCSS-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
-**Backend & Tools**
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring_Framework-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=for-the-badge&logo=fastapi&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![IntelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
-
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
 </div>
 
----
+##  Featured Projects
 
-## 🚧 Currently Building
+<table width="100%">
+<tr>
+<td width="100%" valign="top">
 
-### Student Management System
-> `Spring Boot` · `Spring Data JPA` · `MySQL` · `HTML/CSS`
+### DiGiWallet
+Digital Academic Credential Verification System using JWT authentication, RSA digital signatures, SHA-256 hashing and QR-based verification.
 
-A web application for managing student records — applying backend concepts end-to-end, from database to form handling.
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 
-**Covers:** CRUD operations · Form handling · Layered architecture · Input validation · MySQL integration
+[![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Bibek773/DigiWallet)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-000000?style=flat-square&logo=vercel&logoColor=white)](https://digi-wallet-ecru.vercel.app/)
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top">
 
-> [🔗 StudentManagementSystem](https://github.com/Bibek773/StudentManagementSystem)
+### Job Application Tracker
+Full-stack MERN application to manage internship and job applications with CRUD operations and application status tracking.
 
----
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 
-## 📈 Learning Progress
+[![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Bibek773/JobApplicationTracker)
 
-```text
-✅ Java backend fundamentals
-✅ Spring Boot project structure
-✅ Spring MVC and web application flow
-✅ Spring Data JPA with MySQL
-✅ CRUD operations and form handling
-✅ Input validation and error handling
-🔄 Improving code structure and maintainability
-🔄 Learning how real backend systems are organized
-```
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top">
 
----
+### CollegeApp
+College Management System developed during a hackathon for managing students, notices and academic activities.
 
-## 📊 GitHub Stats
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![JavaFX](https://img.shields.io/badge/JavaFX-EA2D2E?style=flat-square&logo=java&logoColor=white)
+ 
+
+[![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Bibek773/CollegeApp)
+
+</td>
+</tr>
+</table>
+
+
+## GitHub Stats
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Bibek773&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="160"/>
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bibek773&layout=compact&theme=tokyonight&hide_border=true" height="160"/>
+<img src="https://streak-stats.demolab.com?user=Bibek773&theme=tokyonight&hide_border=true" height="170"/>
+<img src="https://github-readme-stats-omega-nine-90.vercel.app/api/top-langs/?username=Bibek773&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" height="170"/>
 
-<br/><br/>
 
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Bibek773.Bibek773)
+
+
 
 </div>
 
----
+
+## Let's Connect
 
 <div align="center">
 
-💼 **Open to Java, backend, full-stack, and software internship opportunities**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bibekghimire773/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Bibek773)
+[![Portfolio](https://img.shields.io/badge/Portfolio-7C3AED?style=for-the-badge&logo=vercel&logoColor=white)](https://ghimire-bibek.com.np)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bibekghimire773@gmail.com)
 
-*Let's build something together.*
+</div>
 
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%"/>
 </div>
