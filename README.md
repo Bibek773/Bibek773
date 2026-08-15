@@ -84,14 +84,6 @@ College Management System developed during a hackathon for managing students, no
 </table>
 
 
-## GitHub Stats
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=Bibek773&theme=tokyonight&hide_border=true" height="170"/>
-<img src="https://github-readme-stats-omega-nine-90.vercel.app/api/top-langs/?username=Bibek773&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" height="170"/>
-
-
 
 
 
