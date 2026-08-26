@@ -7,12 +7,23 @@ from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
 
+# ============================================================
+# Configuration
+# ============================================================
+
 USERNAME = os.environ.get("GITHUB_USERNAME", "Bibek773")
 TOKEN = os.environ.get("GH_TOKEN")
 
 OUTPUT = Path("assets/contribution-graph.svg")
 
 GRAPHQL_URL = "https://api.github.com/graphql"
+
+DAYS_TO_SHOW = 31
+
+
+# ============================================================
+# GitHub GraphQL Query
+# ============================================================
 
 QUERY = """
 query($login: String!) {
@@ -33,11 +44,16 @@ query($login: String!) {
 """
 
 
+# ============================================================
+# Fetch contribution data
+# ============================================================
+
 def fetch_contributions():
     if not TOKEN:
         raise RuntimeError(
             "GH_TOKEN is missing. "
-            "This is normally provided automatically by GitHub Actions."
+            "When running through GitHub Actions, this is provided "
+            "automatically."
         )
 
     payload = json.dumps({
@@ -60,23 +76,32 @@ def fetch_contributions():
 
     try:
         with urlopen(request, timeout=30) as response:
-            data = json.loads(response.read().decode("utf-8"))
+            data = json.loads(
+                response.read().decode("utf-8")
+            )
 
-    except HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        raise RuntimeError(
-            f"GitHub API returned HTTP {e.code}: {body}"
+    except HTTPError as error:
+        body = error.read().decode(
+            "utf-8",
+            errors="replace"
         )
 
-    except URLError as e:
         raise RuntimeError(
-            f"Could not connect to GitHub: {e.reason}"
+            f"GitHub API returned HTTP {error.code}: {body}"
+        )
+
+    except URLError as error:
+        raise RuntimeError(
+            f"Could not connect to GitHub: {error.reason}"
         )
 
     if "errors" in data:
         raise RuntimeError(
             "GitHub GraphQL error:\n"
-            + json.dumps(data["errors"], indent=2)
+            + json.dumps(
+                data["errors"],
+                indent=2
+            )
         )
 
     user = data.get("data", {}).get("user")
@@ -86,43 +111,65 @@ def fetch_contributions():
             f"GitHub user '{USERNAME}' was not found."
         )
 
-    return user["contributionsCollection"]["contributionCalendar"]
+    return (
+        user["contributionsCollection"]
+        ["contributionCalendar"]
+    )
 
 
-def get_last_365_days(calendar):
-    days = []
+# ============================================================
+# Get last 31 days
+# ============================================================
+
+def get_last_31_days(calendar):
+    all_days = []
 
     for week in calendar["weeks"]:
         for day in week["contributionDays"]:
-            days.append({
-                "date": datetime.strptime(day["date"], "%Y-%m-%d").date(),
+
+            all_days.append({
+                "date": datetime.strptime(
+                    day["date"],
+                    "%Y-%m-%d"
+                ).date(),
+
                 "count": day["contributionCount"]
             })
 
-    days.sort(key=lambda x: x["date"])
+    all_days.sort(
+        key=lambda item: item["date"]
+    )
 
-    if not days:
-        raise RuntimeError("No contribution data returned by GitHub.")
+    if not all_days:
+        raise RuntimeError(
+            "GitHub returned no contribution data."
+        )
 
-    end_date = days[-1]["date"]
-    start_date = end_date - timedelta(days=364)
+    # GitHub's latest available contribution date
+    end_date = all_days[-1]["date"]
 
-    filtered = [
-        day for day in days
-        if start_date <= day["date"] <= end_date
-    ]
+    start_date = (
+        end_date
+        - timedelta(days=DAYS_TO_SHOW - 1)
+    )
 
-    # Ensure every day exists, even if GitHub ever returns incomplete data.
-    lookup = {day["date"]: day["count"] for day in filtered}
+    lookup = {
+        item["date"]: item["count"]
+        for item in all_days
+    }
 
     result = []
 
     current = start_date
 
     while current <= end_date:
+
         result.append({
             "date": current,
-            "count": lookup.get(current, 0)
+            "count": lookup.get(
+                current,
+                0
+            )
         })
 
         current += timedelta(days=1)
@@ -130,37 +177,9 @@ def get_last_365_days(calendar):
     return result
 
 
-def smooth_path(points):
-    """
-    Create a smooth cubic Bézier line through all points.
-    """
-
-    if len(points) < 2:
-        return ""
-
-    path = f"M {points[0][0]:.2f},{points[0][1]:.2f}"
-
-    for i in range(1, len(points)):
-        x0, y0 = points[i - 1]
-        x1, y1 = points[i]
-
-        dx = (x1 - x0) * 0.45
-
-        cp1_x = x0 + dx
-        cp1_y = y0
-
-        cp2_x = x1 - dx
-        cp2_y = y1
-
-        path += (
-            f" C "
-            f"{cp1_x:.2f},{cp1_y:.2f} "
-            f"{cp2_x:.2f},{cp2_y:.2f} "
-            f"{x1:.2f},{y1:.2f}"
-        )
-
-    return path
-
+# ============================================================
+# XML escaping
+# ============================================================
 
 def escape(value):
     return (
@@ -173,86 +192,100 @@ def escape(value):
     )
 
 
-def generate_svg(days, total_contributions):
-    # ---------------------------------------------------------
-    # Dimensions
-    # ---------------------------------------------------------
+# ============================================================
+# Generate SVG bar graph
+# ============================================================
+
+def generate_svg(days):
+    # --------------------------------------------------------
+    # Canvas
+    # --------------------------------------------------------
 
     width = 1000
-    height = 300
+    height = 320
 
     left = 55
     right = 20
-    top = 35
-    bottom = 45
+    top = 40
+    bottom = 55
 
-    chart_width = width - left - right
-    chart_height = height - top - bottom
+    chart_width = (
+        width
+        - left
+        - right
+    )
 
-    # ---------------------------------------------------------
-    # Scale
-    # ---------------------------------------------------------
+    chart_height = (
+        height
+        - top
+        - bottom
+    )
 
-    max_count = max(day["count"] for day in days)
+    # --------------------------------------------------------
+    # Maximum contribution count
+    # --------------------------------------------------------
+
+    max_count = max(
+        day["count"]
+        for day in days
+    )
 
     if max_count == 0:
         max_count = 1
 
-    # Round the top of the Y-axis upward.
+    # Make the Y-axis cleaner
     if max_count <= 5:
         y_max = 5
+
     elif max_count <= 10:
         y_max = 10
+
     elif max_count <= 20:
         y_max = 20
+
     elif max_count <= 50:
-        y_max = ((max_count + 4) // 5) * 5
+        y_max = (
+            (max_count + 4) // 5
+        ) * 5
+
     else:
-        y_max = ((max_count + 9) // 10) * 10
+        y_max = (
+            (max_count + 9) // 10
+        ) * 10
 
-    # ---------------------------------------------------------
-    # Convert data → screen coordinates
-    # ---------------------------------------------------------
+    # --------------------------------------------------------
+    # Bar dimensions
+    # --------------------------------------------------------
 
-    points = []
+    bar_gap = 8
 
-    for index, day in enumerate(days):
-        x = (
-            left
-            + (index / (len(days) - 1))
-            * chart_width
-        )
+    bar_width = (
+        chart_width
+        / len(days)
+    ) - bar_gap
 
-        y = (
-            top
-            + chart_height
-            - (day["count"] / y_max)
-            * chart_height
-        )
-
-        points.append((x, y))
-
-    line_path = smooth_path(points)
-
-    # ---------------------------------------------------------
-    # SVG
-    # ---------------------------------------------------------
+    # --------------------------------------------------------
+    # SVG start
+    # --------------------------------------------------------
 
     svg = []
 
     svg.append(
-        f'''<svg xmlns="http://www.w3.org/2000/svg"
+        f'''<svg
+        xmlns="http://www.w3.org/2000/svg"
         width="{width}"
         height="{height}"
         viewBox="0 0 {width} {height}"
         role="img"
-        aria-label="GitHub contribution activity graph">
+        aria-label="GitHub contribution activity for the last 31 days"
+        preserveAspectRatio="xMidYMid meet">
 
         <title>
-            {escape(total_contributions)} contributions in the last year
+            GitHub contribution activity for the last 31 days
         </title>
 
         <style>
+
             .background {{
                 fill: #ffffff;
             }}
@@ -260,7 +293,7 @@ def generate_svg(days, total_contributions):
             .grid {{
                 stroke: #d8dee4;
                 stroke-width: 1;
-                opacity: 0.65;
+                opacity: 0.7;
             }}
 
             .axis-label {{
@@ -285,39 +318,21 @@ def generate_svg(days, total_contributions):
                     Arial,
                     sans-serif;
 
-                font-size: 12px;
+                font-size: 13px;
                 font-weight: 600;
                 fill: #24292f;
             }}
 
-            .line {{
-                fill: none;
-                stroke: #3fb950;
-                stroke-width: 3;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-            }}
-
-            .point {{
+            .bar {{
                 fill: #3fb950;
-                opacity: 0;
+                rx: 3;
+                ry: 3;
             }}
 
-            .point:hover {{
-                opacity: 1;
+            .bar:hover {{
+                fill: #2da44e;
             }}
 
-            .tooltip {{
-                font-family:
-                    -apple-system,
-                    BlinkMacSystemFont,
-                    "Segoe UI",
-                    Helvetica,
-                    Arial,
-                    sans-serif;
-
-                font-size: 10px;
-            }}
         </style>
 
         <rect
@@ -330,35 +345,43 @@ def generate_svg(days, total_contributions):
         '''
     )
 
-    # ---------------------------------------------------------
+    # --------------------------------------------------------
     # Title
-    # ---------------------------------------------------------
+    # --------------------------------------------------------
 
     svg.append(
         f'''
         <text
             class="title"
             x="{left}"
-            y="18"
-        >
-            Contributions
+            y="20">
+            Contributions — Last 31 Days
         </text>
         '''
     )
 
-    # ---------------------------------------------------------
+    # --------------------------------------------------------
     # Y-axis grid
-    # ---------------------------------------------------------
+    # --------------------------------------------------------
 
     grid_steps = 4
 
     for i in range(grid_steps + 1):
-        value = (y_max / grid_steps) * i
+
+        value = (
+            y_max
+            / grid_steps
+            * i
+        )
 
         y = (
             top
             + chart_height
-            - (value / y_max) * chart_height
+            - (
+                value
+                / y_max
+            )
+            * chart_height
         )
 
         svg.append(
@@ -375,155 +398,199 @@ def generate_svg(days, total_contributions):
                 class="axis-label"
                 x="{left - 10}"
                 y="{y + 4:.2f}"
-                text-anchor="end"
-            >
+                text-anchor="end">
                 {int(value)}
             </text>
             '''
         )
 
-    # ---------------------------------------------------------
-    # Vertical grid lines
-    # ---------------------------------------------------------
+    # --------------------------------------------------------
+    # Bars
+    # --------------------------------------------------------
 
-    for i in range(0, len(days), 30):
+    for index, day in enumerate(days):
+
+        count = day["count"]
+
         x = (
             left
-            + (i / (len(days) - 1))
-            * chart_width
+            + index
+            * (
+                chart_width
+                / len(days)
+            )
+            + bar_gap / 2
         )
 
-        svg.append(
-            f'''
-            <line
-                class="grid"
-                x1="{x:.2f}"
-                y1="{top}"
-                x2="{x:.2f}"
-                y2="{top + chart_height}"
-            />
-            '''
+        bar_height = (
+            count
+            / y_max
+            * chart_height
         )
 
-    # ---------------------------------------------------------
-    # Month labels
-    # ---------------------------------------------------------
+        y = (
+            top
+            + chart_height
+            - bar_height
+        )
 
-    previous_month = None
+        # Make zero-contribution days visible
+        if count == 0:
+            bar_height = 2
 
-    for index, day in enumerate(days):
-        month_key = (day["date"].year, day["date"].month)
-
-        if month_key != previous_month:
-            x = (
-                left
-                + (index / (len(days) - 1))
-                * chart_width
+            y = (
+                top
+                + chart_height
+                - 2
             )
 
-            label = day["date"].strftime("%b")
+        date_text = day["date"].strftime(
+            "%b %d, %Y"
+        )
 
-            svg.append(
-                f'''
-                <text
-                    class="axis-label"
-                    x="{x:.2f}"
-                    y="{height - 12}"
-                    text-anchor="middle"
-                >
-                    {label}
-                </text>
-                '''
-            )
-
-            previous_month = month_key
-
-    # ---------------------------------------------------------
-    # Main smooth line
-    # ---------------------------------------------------------
-
-    svg.append(
-        f'''
-        <path
-            class="line"
-            d="{line_path}"
-        />
-        '''
-    )
-
-    # ---------------------------------------------------------
-    # Invisible interactive points
-    # ---------------------------------------------------------
-
-    point_radius = 5
-
-    for index, day in enumerate(days):
-        x, y = points[index]
+        contribution_text = (
+            f"{count} contribution"
+            f"{'s' if count != 1 else ''}"
+        )
 
         tooltip = (
-            f'{day["count"]} contribution'
-            f'{"s" if day["count"] != 1 else ""}'
-            f' on {day["date"].strftime("%b %d, %Y")}'
+            f"{contribution_text} "
+            f"on {date_text}"
         )
 
         svg.append(
             f'''
-            <circle
-                class="point"
-                cx="{x:.2f}"
-                cy="{y:.2f}"
-                r="{point_radius}"
-            >
-                <title>{escape(tooltip)}</title>
-            </circle>
+            <rect
+                class="bar"
+                x="{x:.2f}"
+                y="{y:.2f}"
+                width="{bar_width:.2f}"
+                height="{bar_height:.2f}">
+
+                <title>
+                    {escape(tooltip)}
+                </title>
+
+            </rect>
             '''
         )
+
+    # --------------------------------------------------------
+    # Date labels
+    # --------------------------------------------------------
+
+    # Show every 5th day + final day
+    label_indices = set(
+        range(0, len(days), 5)
+    )
+
+    label_indices.add(
+        len(days) - 1
+    )
+
+    for index in sorted(label_indices):
+
+        day = days[index]
+
+        x = (
+            left
+            + index
+            * (
+                chart_width
+                / len(days)
+            )
+            + (
+                chart_width
+                / len(days)
+            ) / 2
+        )
+
+        label = day["date"].strftime(
+            "%b %d"
+        )
+
+        svg.append(
+            f'''
+            <text
+                class="axis-label"
+                x="{x:.2f}"
+                y="{height - 18}"
+                text-anchor="middle">
+                {escape(label)}
+            </text>
+            '''
+        )
+
+    # --------------------------------------------------------
+    # Close SVG
+    # --------------------------------------------------------
 
     svg.append("</svg>")
 
     return "\n".join(svg)
 
 
+# ============================================================
+# Main
+# ============================================================
+
 def main():
-    print(f"Fetching GitHub contributions for {USERNAME}...")
+
+    print(
+        f"Fetching GitHub contributions "
+        f"for {USERNAME}..."
+    )
 
     calendar = fetch_contributions()
 
-    total = calendar["totalContributions"]
-
-    days = get_last_365_days(calendar)
-
-    svg = generate_svg(
-        days,
-        total
+    days = get_last_31_days(
+        calendar
     )
 
+    svg = generate_svg(
+        days
+    )
+
+    # Create assets directory automatically
     OUTPUT.parent.mkdir(
         parents=True,
         exist_ok=True
     )
 
+    # Create SVG automatically
     OUTPUT.write_text(
         svg,
         encoding="utf-8"
     )
 
-    print(
-        f"Generated {OUTPUT}"
+    total = sum(
+        day["count"]
+        for day in days
     )
 
     print(
-        f"Total contributions: {total}"
+        f"Generated: {OUTPUT}"
     )
 
     print(
-        f"Days plotted: {len(days)}"
+        f"Days: {len(days)}"
+    )
+
+    print(
+        f"Contributions in last 31 days: {total}"
     )
 
 
 if __name__ == "__main__":
+
     try:
         main()
+
     except Exception as error:
-        print(f"ERROR: {error}", file=sys.stderr)
+
+        print(
+            f"ERROR: {error}",
+            file=sys.stderr
+        )
+
         sys.exit(1)

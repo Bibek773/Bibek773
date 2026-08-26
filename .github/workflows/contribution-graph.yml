@@ -1,11 +1,11 @@
 name: Update Contribution Graph
 
 on:
-  # Update automatically every day
   schedule:
+    # Run every day at 00:15 UTC
     - cron: "15 0 * * *"
 
-  # Allows manual execution
+  # Allow manual execution
   workflow_dispatch:
 
 permissions:
@@ -26,7 +26,7 @@ jobs:
         run: |
           python scripts/generate_contribution_graph.py
 
-      - name: Commit graph
+      - name: Commit updated graph
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
