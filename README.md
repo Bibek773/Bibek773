@@ -89,10 +89,10 @@ College Management System developed during a hackathon for managing students, no
 <p align="center">
   <img
     src="./assets/contribution-graph.svg"
-    alt="GitHub contribution graph"
+    alt="GitHub contribution activity"
+    width="100%"
   />
 </p>
-
 </div>
 
 
