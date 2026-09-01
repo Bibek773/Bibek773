@@ -84,17 +84,6 @@ College Management System developed during a hackathon for managing students, no
 </table>
 
 
-## Contribution Graph
-
-<p align="center">
-  <img
-    src="./assets/contribution-graph.svg"
-    alt="GitHub contribution activity"
-    width="100%"
-  />
-</p>
-</div>
-
 
 ## Let's Connect
 
